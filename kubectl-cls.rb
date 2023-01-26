@@ -5,20 +5,20 @@
 class KubectlCls < Formula
   desc "List CronJobs and CronWorkflows that are scheduled and executed during a specific time period."
   homepage "https://github.com/unblee/kubectl-cls"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.0/kubectl-cls_Darwin_arm64.tar.gz"
-      sha256 "bd9205c5d91709956a866abea2f8ca39bbf3b91c102f04b4473b98391d19a685"
+      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.1/kubectl-cls_Darwin_arm64.tar.gz"
+      sha256 "8db5b7438705baa7891a2596e59896cf85aab81fc96e95aaca5b5f8b538cb892"
 
       def install
         bin.install "kubectl-cls"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.0/kubectl-cls_Darwin_x86_64.tar.gz"
-      sha256 "034eec3d7c70f050ffc973503ff06098de569664dc1bb6e9a48ed490f25a14dc"
+      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.1/kubectl-cls_Darwin_x86_64.tar.gz"
+      sha256 "25417ddf042cd920d0985b9c4dfc893ebbcf895c2184b0f9ae735980fd3f333c"
 
       def install
         bin.install "kubectl-cls"
@@ -28,16 +28,16 @@ class KubectlCls < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.0/kubectl-cls_Linux_x86_64.tar.gz"
-      sha256 "77fc38493c417614aa9526122c9bd175e4eaa997e24e4b84929ad1b71237efae"
+      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.1/kubectl-cls_Linux_x86_64.tar.gz"
+      sha256 "a4f2c2b4f1534d6942c36b32eb52a274b7a132156ab361af78142d9e47538b8c"
 
       def install
         bin.install "kubectl-cls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.0/kubectl-cls_Linux_arm64.tar.gz"
-      sha256 "9d2763d675b1b3c22f070c99cfbfb183a7bc5b8a5ac1a3dc428d9ee4ef312a76"
+      url "https://github.com/unblee/kubectl-cls/releases/download/v1.0.1/kubectl-cls_Linux_arm64.tar.gz"
+      sha256 "d143dd416b1e906e87f0eb9247e44307f88c399d62b09d21038e256fe5049be9"
 
       def install
         bin.install "kubectl-cls"
